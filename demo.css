@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*.focus {
+    outline: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span.dur {
+    font-size: 15px;
+}
+
+span.dol {
+    text-decoration: line-through;
+}
+
+.top-banner {
+    background-color: #bc1e4a;
+    position: absolute;
+    padding: 0.2rem 3rem;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+}
+
+p.current-plan {
+    font-size: 0.9rem;
+    font-weight: 1000;
+}
+
+p.plan-type {
+    font-size: 0.70rem;
+    margin-bottom: 1rem;
+}
+
+.container {
+    text-align: center;
+    width: 900px;
+}
+
+h1.title {
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+
+.toggle-switch {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.toggler {
+    appearance: none;
+    height: 15px;
+    width: 30px;
+    background-color: #bc1e4a;
+    border-radius: 25px;
+    margin: 0 0.8rem;
+    position: relative;
+}
+
+.toggler::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    right: 1px;
+}
+
+.toggler:checked:before {
+    right: 50%;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.card {
+    height: 400px;
+    width: 32%;
+    background-color: #22262c;
+    border-radius: 15px;
+    text-align: center;
+    padding: 2rem;
+}
+
+
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    margin-bottom: 1rem;
+}
+
+.card-price {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.card ul {
+    text-align: left;
+    font-size: 0.9rem;
+    font-weight: lighter;
+}
+
+.card ul li:before {
+    content: "•";
+    margin-right: 0.5rem;
+    color: #bc1e4a;
+    font-size: 1.5rem;
+
+}
+
+.card ul li {
+    margin-bottom: 0.2rem;
+}
+
+.card-btn {
+    margin-top: 1.5rem;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #bc1e4a;
+    color: white;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+#card-1 .card-btn:hover,
+#card-2 .card-btn:hover,
+#card-3 .card-btn:hover,
+.active .card-btn {
+    background-color: #bc1e4a;
+}
+
+#card-1 .card-price,
+#card-2 .card-price,
+#card-3 .card-price {
+    margin-bottom: 1.5rem;
+}
+
+h3.actual-price {
+    color: #bc1e4a;
+}
