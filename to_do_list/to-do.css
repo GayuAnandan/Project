@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: grey;
+}
+
+.box {
+    position: relative;
+    width: 450px;
+    height: 550px;
+    border-radius: 30px;
+    background-color: rgb(73, 71, 71);
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+        10px 10px 70px rgba(0, 0, 0, 0.25),
+        insert 5px 5px 10px rgba(0, 0, 0, 0.5),
+        insert 5px 5px 20px rgba(255, 255, 255, 0.2),
+        insert -5px -5px 15px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    width: 100%;
+    font-weight: 800;
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+}
+
+.btn {
+    font-weight: 625;
+    display: flex;
+    background-color: whitesmoke;
+    color: rgb(154, 97, 239);
+    border-radius: 20px;
+    padding: 1px 5px;
+    margin-left: 40%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.input-box {
+    position: relative;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    background-color: crimson;
+    margin: 10px 5px 0px 70px;
+    padding: 15px 20px;
+    height: 20px;
+    min-height: 35px;
+    cursor: pointer;
+    border-radius: 22px;
+    color: bisque;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25), inset 2px 2px 5px rgba(0, 0, 0, 0.5),
+        inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.input-box img {
+    width: 25px;
+    position: absolute;
+    right: 5px;
+    cursor: pointer;
+}
